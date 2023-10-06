@@ -7,14 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+        <context:component-scan base-package="spring_introduction"/>
+        <context:property-placeholder location="classpath:myApp.properties"/>
 
-
-    <bean id="myPet"
-          class="spring_introduction.Cat"
-          init-method="init"
-          destroy-method="destroy"
-          scope="prototype">
-    </bean>
 
 
 </beans>
